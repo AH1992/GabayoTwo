@@ -8,31 +8,31 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-//    
-//    lazy var miniPlayer: PlayerViewController = {
-//        let miniPlayerVC = PlayerViewController()
-//        miniPlayerVC.view.translatesAutoresizingMaskIntoConstraints = false
-//        return miniPlayerVC
-//    }()
-//    
-//    lazy var containerView: UIView = {
-//        let uiView = UIView()
-//        uiView.translatesAutoresizingMaskIntoConstraints = false
-//        return uiView
-//    }()
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        addChildViews()
-//        setConstraints()
-//        
-//    }
-//    
-//    func addChildViews(){
-//        view.addSubview(containerView)
-//        addChild(miniPlayer)
-//        containerView.addSubview(miniPlayer.view)
-//        didMove(toParent: self)
+   
+   lazy var miniPlayer: PlayerViewController = {
+       let miniPlayerVC = PlayerViewController()
+       miniPlayerVC.view.translatesAutoresizingMaskIntoConstraints = false
+      return miniPlayerVC
+   }()
+   
+   lazy var containerView: UIView = {
+       let uiView = UIView()
+       uiView.translatesAutoresizingMaskIntoConstraints = false
+       return uiView
+   }()
+
+   override func viewDidLoad() {
+       super.viewDidLoad()
+       addChildViews()
+       setConstraints()
+      
+  }
+    
+   func addChildViews(){
+      view.addSubview(containerView)
+       addChild(miniPlayer)
+        containerView.addSubview(miniPlayer.view)
+       didMove(toParent: self)
 //    }
 //    
 //    func setConstraints(){
