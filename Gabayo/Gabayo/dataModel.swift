@@ -2,7 +2,7 @@
 //  dataModel.swift
 //  Gabayo
 //
-//  Created by SC 4/18/23.
+//  Created by AH 4/18/23.
 //
 
 import Foundation
